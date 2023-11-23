@@ -21,7 +21,7 @@ fetch(
   });
 refresh.addEventListener("click", function () {
   fetch(
-    `http://api.alquran.cloud/v1/ayah/${Math.floor(Math.random() * 6236)}/ar.alafasy`
+    `https://api.alquran.cloud/v1/ayah/${Math.floor(Math.random() * 6236)}/ar.alafasy`
   )
     .then((res) => res.json())
     .then((data) => {
