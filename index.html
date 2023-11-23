@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generat Random Surah</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="flex h-screen bg-slate-800">
+    <main
+      class="rounded-md flex flex-col text-white text-center p-4 w-11/12 h-96 m-auto relative bg-slate-950 max-w-3xl"
+    >
+      <h1 class="text-right mr-4 my-4 flex justify-between">
+        <span class="number"></span>
+        <span class="name"></span>
+      </h1>
+      <h2 class="my-4">بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+      <p class="verse my-4 flex-1"></p>
+      <div class="custom-audio"></div>
+      <audio src="" controls class="w-full mb-5 invert"></audio>
+      <!-- <div class="mb-6 border border-slate-500 rounded-lg flex p-4 justify-between">
+        <audio id="player" class="w-full mb-5" preload="metadata"></audio>
+        <section class="state">
+          <button class="w-6 h-6" onclick="document.getElementById('player').play()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+              />
+            </svg>
+          </button>
+          <button class="w-6 h-6" onclick="document.getElementById('player').pause()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+              />
+            </svg>
+          </button>
+        </section>
+        <input type="range" />
+        <section class="volume">
+          <button
+            class="w-6 h-6"
+            onclick="document.getElementById('player').volume += 0.1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+            </svg>
+          </button>
+          <button
+            class="w-6 h-6"
+            onclick="document.getElementById('player').volume -= 0.1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+            </svg>
+          </button>
+        </section>
+      </div> -->
+      <span
+        class="refresh absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+          />
+        </svg>
+      </span>
+    </main>
+  </body>
+  <script src="dist/index.js"></script>
+</html>
