@@ -48,6 +48,7 @@ next.addEventListener("click", () => {
         surah.innerHTML = data.data.surah.name;
         verse.innerHTML = data.data.text;
         audi.src = data.data.audio;
+        audi.play();
         surahnum = data.data.surah.number;
     });
 });
@@ -61,6 +62,7 @@ prev.addEventListener("click", () => {
         surah.innerHTML = data.data.surah.name;
         verse.innerHTML = data.data.text;
         audi.src = data.data.audio;
+        audi.play();
         surahnum = data.data.surah.number;
     });
 });
