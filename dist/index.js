@@ -78,6 +78,6 @@ full.addEventListener("click", () => {
             console.log(i);
             verse.innerHTML += ` (${i.numberInSurah}) ` + i.text;
         }
-        audi.style.display = "none";
+        audi.src = `https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/${data.data.number}.mp3`;
     });
 });
