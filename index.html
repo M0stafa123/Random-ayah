@@ -6,10 +6,8 @@
     <title>Generat Random ayah</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body class="flex h-screen bg-slate-800">
-    <main
-      class="rounded-md flex flex-col text-white text-center p-4 w-11/12 h-96 m-auto relative bg-slate-950 max-w-3xl"
-    >
+  <body class="flex-col h-screen bg-slate-800">
+    <main class="flex flex-col min-h-[392px] mt-60 mb-0 relative">
       <h1 class="text-right mr-4 my-4 flex justify-between">
         <span class="number"></span>
         <span class="name"></span>
@@ -105,6 +103,13 @@
         </svg>
       </span>
     </main>
+    <section class="controls h-32 mt-4 justify-between items-center">
+      <button class="next">الايه التالية</button>
+      <button class="full !p-0 self-end !rounded-full !w-16 !h-16 text-sm">
+        السورة كامله
+      </button>
+      <button class="prev">الايه السابقة</button>
+    </section>
   </body>
   <script src="dist/index.js"></script>
 </html>
